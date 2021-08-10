@@ -1,0 +1,8 @@
+default:
+  extensions:
+    Laracasts\Behat:
+    # env_path: .env.behat
+  suites:
+    example_features:
+      paths: [ '%paths.base%/tests/Behat/Features' ]
+      contexts: [ Tests\Behat\Contexts\ExampleContext ]
