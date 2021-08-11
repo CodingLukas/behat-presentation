@@ -5,4 +5,8 @@ default:
   suites:
     example_features:
       paths: [ '%paths.base%/tests/Behat/Features' ]
-      contexts: [ Tests\Behat\Contexts\ExampleContext ]
+      contexts: [
+          Tests\Behat\Contexts\ExampleContext,
+          Tests\Behat\Contexts\BadContext,
+          Tests\Behat\Contexts\GoodContext
+      ]
