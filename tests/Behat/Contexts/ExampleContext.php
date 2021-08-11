@@ -6,9 +6,12 @@ use Behat\Behat\Context\Context;
 use Illuminate\Testing\Assert;
 use Tests\Behat\Basket;
 use Tests\Behat\Shelf;
+use Tests\Behat\Traits\DetailedErrorMessageTrait;
 
 class ExampleContext implements Context
 {
+    use DetailedErrorMessageTrait;
+
     private $shelf;
     private $basket;
 
